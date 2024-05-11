@@ -1,0 +1,41 @@
+body {
+    margin: 0px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+#hud {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.key {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 25%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    font-family: 'Arial', sans-serif; 
+    transition: background-color 0.1s ease;
+    font-weight: bold;
+}
+
+.key.pressed {
+    background-color: green;
+}
+
+.key.locked {
+    background-color: yellow;
+}
+
+.key.mesh {
+    background-color: red;
+}
